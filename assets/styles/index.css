@@ -219,8 +219,8 @@ header.container-top button.contact {
     width: 80%;
     margin: auto;
   }
-  .about-us .boxes img.box-section {
-    width: 300px;
+  .about-us .boxes .box-section {
+    width: 100%;
   }
   .about-us .boxes .about {
     margin: 15px 0px 15px 0px;
