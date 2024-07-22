@@ -63,6 +63,7 @@ header.container-top .nav-bar {
   }
 }
 header.container-top .nav-bar ul.itens {
+  list-style: none;
   display: flex;
   justify-content: space-between;
 }

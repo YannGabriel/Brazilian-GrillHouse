@@ -20,6 +20,7 @@ header.container-top{
     width: 400px;
     align-content: center;
     ul.itens{
+      list-style: none;
       display: flex;
       justify-content: space-between;
       li.target{
