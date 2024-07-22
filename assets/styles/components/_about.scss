@@ -1,0 +1,73 @@
+.about-us {
+  padding-top: 8%;
+  background-color: var(--black-bckg);
+  h1.title {
+    @media (width > 760px) {
+      font-size: 4rem;
+    }
+    @media (width <= 760px) {
+      font-size: 3rem;
+    }
+    color: var(--p-white);
+    font-family: "Poppins";
+    text-align: center;
+    padding: 10%;
+  }
+  .boxes {
+    @media (width > 1000px) {
+      display: grid;
+      grid-template-columns: 330px 330px 330px;
+      justify-content: space-around;
+      margin: auto;
+      width: 1075px;
+      justify-items: center;
+      .box-section {
+        width: 330px;
+        height: 410px;
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 330px;
+        height: 410px;
+        background-color: var(--card-bckg);
+        p.about-txt {
+          width: 85%;
+          text-align: center;
+          color: var(--text-beige);
+          font-family: "Belleza";
+        }
+      }
+    }
+
+    @media (width <= 1000px) {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+      img.box-section{
+        width: 300px;
+      }
+      .about{
+        margin: 15px 0px 15px 0px;
+        padding: 15px;
+        background-color: var(--card-bckg);
+        display: flex;
+        flex-direction: column;
+        color: var(--text-beige);
+        .logo{
+          width: 80%;
+          margin: auto;
+        }
+        p.about-txt{
+          font-family: "Belleza";
+          width: 80%;
+          margin: auto;
+          text-align: center;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

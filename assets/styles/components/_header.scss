@@ -1,0 +1,49 @@
+
+
+@import './colors';
+@import './fonts';
+
+header.container-top{
+
+  background-color: transparent;
+  position: absolute;
+  z-index: 2;
+  height: 80px;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+
+  .nav-bar{
+    @media(width <= 760px){
+      display: none;
+    }
+    width: 400px;
+    align-content: center;
+    ul.itens{
+      display: flex;
+      justify-content: space-between;
+      li.target{
+        a.link{
+          font-size: 1.2rem;
+          font-family: "Belleza", sans-serif;
+          text-decoration: none;
+          color:  var(--text-beige);
+        }
+      }
+    }
+  }
+
+  button.contact{
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color:  var(--text-beige);
+    color:  var(--p-white);
+    border: 0;
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    font-size: 1.15rem;
+  }
+
+}
