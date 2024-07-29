@@ -1,0 +1,71 @@
+
+
+@import './colors';
+@import './fonts';
+
+main.menu{
+  padding-top: 150px;
+  background-color: var(--black-bckg);
+  h2.title{
+    color: var(--p-white);
+    font-size: 2.6rem;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Poppins';
+  }
+}
+.choose-box{
+  @media(width >= 1000px){
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  background-color: var(--black-bckg);
+  .card{
+    border-radius: 24px;
+    margin: auto;
+    width: 300px;
+    padding-bottom: 50px;
+    background-color: var(--card-bckg);
+    .food-image{
+      margin: auto;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+    }
+    .section-name{
+      color: var(--p-white);
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .content-food{
+      font-size: 1.5rem;
+      width: 90%;
+      text-align: center;
+      margin: auto;
+      color: var(--p-white);
+      display: block;
+      padding-bottom: 10%;
+    }
+    .see-more{
+      background-color: var(--text-beige);
+      width: 50%;
+      padding: 5px 10px 5px 10px;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      border: none;
+      color: var(--p-white);
+      font-family: 'Poppins';
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      a.target{
+        text-decoration: none;
+        color: var(--p-white);
+      }
+    }
+  }
+}

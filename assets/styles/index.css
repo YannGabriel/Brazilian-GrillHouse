@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -165,6 +166,7 @@ header.container-top button.contact {
 }
 
 .about-us {
+  padding-bottom: 60px;
   padding-top: 8%;
   background-color: var(--black-bckg);
 }
@@ -241,4 +243,87 @@ header.container-top button.contact {
     text-align: center;
     padding-bottom: 20px;
   }
+}
+
+:root {
+  --text-beige: #E1D1B7;
+  --p-white: #ececec;
+  --black-bckg: #000;
+  --card-bckg: #2C2C2C;
+}
+
+.fonts {
+  font-family: "Belleza", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Playwrite BE VLG", cursive;
+}
+
+main.menu {
+  padding-top: 150px;
+  background-color: var(--black-bckg);
+}
+main.menu h2.title {
+  color: var(--p-white);
+  font-size: 2.6rem;
+  padding: 50px;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.choose-box {
+  background-color: var(--black-bckg);
+}
+@media (width >= 1000px) {
+  .choose-box {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.choose-box .card {
+  border-radius: 24px;
+  margin: auto;
+  width: 300px;
+  padding-bottom: 50px;
+  background-color: var(--card-bckg);
+}
+.choose-box .card .food-image {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.choose-box .card .section-name {
+  color: var(--p-white);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.choose-box .card .content-food {
+  font-size: 1.5rem;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  color: var(--p-white);
+  display: block;
+  padding-bottom: 10%;
+}
+.choose-box .card .see-more {
+  background-color: var(--text-beige);
+  width: 50%;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  color: var(--p-white);
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.choose-box .card .see-more a.target {
+  text-decoration: none;
+  color: var(--p-white);
 }/*# sourceMappingURL=index.css.map */
