@@ -62,7 +62,7 @@
           <img src="assets/images/steak.png" alt="" class="food-image">
           <h3 class="section-name">Steaks</h3>
           <span class="content-food">We have more than 20 types of steaks and meals!</span>
-          <button type="button" class="see-more"><a href="#menu-list" class="target">See More</a></button>
+          <button type="button" class="see-more" onclick="steakMenu()"><a href="#menu-list" class="target">See More</a></button>
         </div>
         <div class="card" style=" margin-bottom: 30px;">
           <img src="assets/images/drink.png" alt="" class="food-image">
@@ -77,6 +77,17 @@
           <button type="button" class="see-more"><a href="#menu-list" class="target">See More</a></button>
         </div>
       </section>
+
+      <section id="menu-list">
+
+        <h2 class="menu-list">Menu List</h2>
+        <span class="atention">Click in any button</span>
+        <ul class="itens-from-menu" id="list">
+
+        </ul>
+      </section>
     </main>
+
+    <script src="assets/javascript/main.js"></script>
   </body>
 </html>
