@@ -358,9 +358,13 @@ main.menu h2.title {
   }
 }
 #menu-list ul.itens-from-menu li.item {
-  width: 60%;
   border-bottom: 0.5px solid var(--black-bckg);
   padding: 20px;
+}
+@media (width >= 1000px) {
+  #menu-list ul.itens-from-menu li.item {
+    width: 60%;
+  }
 }
 #menu-list ul.itens-from-menu li.item .name {
   padding-top: 5px;
