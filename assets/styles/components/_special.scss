@@ -1,0 +1,90 @@
+
+
+#special{
+  position: relative;
+  background-color: var(--card-bckg);
+  height: 150vh;
+  .plate-of-chef{
+    @media (width >= 1000px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    position: absolute;
+    z-index: 3;
+    top: 25%;
+  }
+  .plate-content{
+    @media(width >= 1000px){
+      display: grid;
+      width: 1200px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .title{
+    padding-top: 40%;
+    padding-bottom: 50px;
+    font-family: "Poppins";
+    font-size: 3rem;
+    text-align: center;
+    color: var(--p-white);
+  }
+  .chef-cooking{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 8px;
+  }
+  h3.plate-name{
+    @media(width >= 1000px){
+      text-align: start;
+      font-size: 2.4rem;
+    }
+    color: var(--text-beige);
+    font-family: "Belleza";
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+  }
+  p.itens{
+    @media(width >= 1000px){
+      text-align: start;
+      font-size: 1.6rem;
+      width: 70%;
+      margin: 2%;
+    }
+    color: var(--p-white);
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  .ingredients{
+    color: var(--p-white);
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+  .price{
+    @media(width >= 1000px){
+      text-align: start;
+      font-size: 1.45rem;
+    }
+    color: var(--text-beige);
+    margin: auto;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 15px;
+    font-family: "Belleza";
+  }
+}
+
+#special::before{
+  top: -0.25%;
+  content: '';
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: linear-gradient(var(--text-beige), transparent);
+}

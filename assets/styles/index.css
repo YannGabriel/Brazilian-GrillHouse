@@ -331,7 +331,9 @@ main.menu h2.title {
 }
 
 #menu-list {
+  min-height: 100vh;
   margin-top: 10%;
+  padding-bottom: 100px;
   background-color: var(--text-beige);
   color: var(--black-bgkg);
 }
@@ -382,4 +384,101 @@ main.menu h2.title {
   background-color: var(--p-white);
   width: 80%;
   margin: auto;
+}
+
+#special {
+  position: relative;
+  background-color: var(--card-bckg);
+  height: 150vh;
+}
+#special .plate-of-chef {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+}
+@media (width >= 1000px) {
+  #special .plate-of-chef {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (width >= 1000px) {
+  #special .plate-content {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#special .title {
+  padding-top: 40%;
+  padding-bottom: 50px;
+  font-family: "Poppins";
+  font-size: 3rem;
+  text-align: center;
+  color: var(--p-white);
+}
+#special .chef-cooking {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 8px;
+}
+#special h3.plate-name {
+  color: var(--text-beige);
+  font-family: "Belleza";
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px;
+}
+@media (width >= 1000px) {
+  #special h3.plate-name {
+    text-align: start;
+    font-size: 2.4rem;
+  }
+}
+#special p.itens {
+  color: var(--p-white);
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+@media (width >= 1000px) {
+  #special p.itens {
+    text-align: start;
+    font-size: 1.6rem;
+    width: 70%;
+    margin: 2%;
+  }
+}
+#special .ingredients {
+  color: var(--p-white);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+#special .price {
+  color: var(--text-beige);
+  margin: auto;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 15px;
+  font-family: "Belleza";
+}
+@media (width >= 1000px) {
+  #special .price {
+    text-align: start;
+    font-size: 1.45rem;
+  }
+}
+
+#special::before {
+  top: -0.25%;
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: linear-gradient(var(--text-beige), transparent);
 }/*# sourceMappingURL=index.css.map */
