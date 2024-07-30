@@ -8,6 +8,7 @@
 }
 
 html, body {
+  background-color: var(--card-bckg);
   scroll-behavior: smooth;
 }
 
@@ -481,4 +482,42 @@ main.menu h2.title {
   height: 50%;
   position: absolute;
   background: linear-gradient(var(--text-beige), transparent);
+}
+
+footer {
+  background-color: var(--text-beige);
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+footer .about-programer .atr-direct {
+  color: var(--p-white);
+  font-family: "Poppins";
+}
+footer .about-programer .dev-name {
+  color: var(--black-bckg);
+  font-size: 2rem;
+  font-family: "Poppins";
+}
+footer .about-programer .contact a {
+  text-decoration: none;
+  color: var(--p-white);
+  font-family: "belleza";
+}
+footer .text {
+  color: var(--black-bckg);
+  text-align: start;
+  font-family: "garet";
+}
+
+@media (min-width: 1200px) {
+  footer {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+  footer .text {
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=index.css.map */

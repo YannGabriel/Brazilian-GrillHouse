@@ -8,6 +8,7 @@
 }
 
 html, body{
+  background-color: var(--card-bckg);
   scroll-behavior: smooth;
 }
 
@@ -32,3 +33,4 @@ body::-webkit-scrollbar-thumb {
 @import './components/menu-cards';
 @import './components/menu';
 @import './components/special';
+@import './components/footer'
